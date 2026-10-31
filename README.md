@@ -14,7 +14,9 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 - **Top bar:** the clock, then one glass capsule with:
   - the weather; OK on it unrolls a 5-day forecast;
   - a red Wi-Fi-off icon, only while there's no internet;
-  - light scenes and news (coming soon), screensaver and Play Store buttons;
+  - light scenes: your IKEA Home scenes as tiles plus the room temperature, straight from a DIRIGERA
+    hub on your network (*Settings → Advanced → IKEA Home*);
+  - news (coming soon), screensaver and Play Store buttons;
   - the settings gear.
 - **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
   ones you never use.
@@ -24,7 +26,8 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 - **Updates itself:** it checks this page once a day. *Settings → About → Install update* installs a
   new version, and your settings are kept.
 - **Privacy:** no ads, no recommendations, no analytics. It only goes online for the photos, the
-  weather (open-meteo.com, no account) and its own updates (this GitHub page).
+  weather (open-meteo.com, no account) and its own updates (this GitHub page). An IKEA hub is reached
+  only on your own network.
 
 ## Download
 
@@ -198,6 +201,12 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.30.0 · 2026-10-31
+
+IKEA Home: the bulb in the top bar now shows your IKEA Home scenes as tiles, with the room temperature from an IKEA sensor. Pair your DIRIGERA hub in Settings → Advanced → IKEA Home (press the button on the bottom of the hub). Everything stays on your home network.
+
+IKEA Home: žarulja u gornjoj traci sada prikazuje vaše IKEA Home scene kao pločice, uz temperaturu sobe s IKEA senzora. Uparite čvorište DIRIGERA u Postavke → Napredno → IKEA Home (pritisnite gumb na dnu čvorišta). Sve ostaje u vašoj kućnoj mreži.
 
 ### 0.29.0 · 2026-10-31
 
