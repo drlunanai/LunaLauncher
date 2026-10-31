@@ -9,7 +9,8 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
   - a folder on the TV or a USB drive;
   - an Apple shared album.
 
-  Dimming is adjustable.
+  Dimming is adjustable, and an optional slow pan and zoom makes it a "living photo".
+- **Clock:** standard, large minimal, analogue or stacked.
 - **Top bar:** the clock, then one glass capsule with:
   - the weather; OK on it unrolls a 5-day forecast;
   - Wi-Fi, VPN, screensaver and Play Store buttons;
@@ -196,6 +197,10 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.24.0 · 2026-10-31
+
+Clock styles (Standard, Large minimal, Analogue, Stacked) and optional slow photo motion. / Izgled sata (Standardni, Veliki minimalni, Analogni, Složeni) i pokret fotografije.
 
 ### 0.23.0 · 2026-10-31
 
