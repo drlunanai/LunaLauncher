@@ -198,6 +198,10 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.28.0 · 2026-10-31
+
+New settings layout: six category pills, a path on every page, and the menu resizes to fit. / Nove postavke: šest kategorija, putanja na svakoj stranici i izbornik prilagođen sadržaju.
+
 ### 0.27.0 · 2026-10-31
 
 New background source: The Met, a fresh set of 30+ public-domain artworks every day. / Nova pozadina: The Met, svaki dan novi izbor od 30+ umjetnina u javnom vlasništvu.
