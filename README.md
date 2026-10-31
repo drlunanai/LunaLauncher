@@ -202,6 +202,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.32.0 · 2026-10-31
+
+IKEA scenes are now pills like the settings, and the scene that ran last is marked. Up closes the settings, which no longer dim the screen. The selected app has a white border, and a single row of apps moves a whole screen at a time. The Met caption in the screensaver is lighter and smaller. Release notes now appear in the launcher's language.
+
+IKEA scene su sada pilule kao u postavkama, a posljednja pokrenuta scena je označena. Tipka gore zatvara postavke, koje više ne zatamnjuju zaslon. Odabrana aplikacija ima bijeli okvir, a jedan red aplikacija pomiče se za cijeli zaslon. Opis umjetnine na čuvaru zaslona je prozirniji i manji. Bilješke o izdanju sada se prikazuju na jeziku launchera.
+
 ### 0.31.0 · 2026-10-31
 
 The Met: if the museum has fewer artworks than you asked for, the ones found are now shown instead of none. Preparing the daily set is much faster and uses far less data and battery of the box, and settings show its progress.
