@@ -202,6 +202,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.34.0 · 2026-10-31
+
+The selected app now has a thinner white border with a soft glow. Apps slide smoothly to the next screen or row instead of jumping.
+
+Odabrana aplikacija sada ima tanji bijeli okvir s blagim sjajem. Aplikacije glatko klize na sljedeći zaslon ili red umjesto da skoče.
+
 ### 0.33.0 · 2026-10-31
 
 The Met: artworks are now cropped to fill the screen and stored at screen size, so they take far less space and memory, and the launcher runs smoother. Your current set is converted once, without downloading it again. Settings show how much space the day's set takes.
