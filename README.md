@@ -202,6 +202,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.31.0 · 2026-10-31
+
+The Met: if the museum has fewer artworks than you asked for, the ones found are now shown instead of none. Preparing the daily set is much faster and uses far less data and battery of the box, and settings show its progress.
+
+The Met: ako muzej ima manje umjetnina nego što ste tražili, sada se prikazuju one pronađene umjesto nijedne. Priprema dnevnog izbora je puno brža i troši znatno manje podataka i snage uređaja, a postavke prikazuju napredak.
+
 ### 0.30.0 · 2026-10-31
 
 IKEA Home: the bulb in the top bar now shows your IKEA Home scenes as tiles, with the room temperature from an IKEA sensor. Pair your DIRIGERA hub in Settings → Advanced → IKEA Home (press the button on the bottom of the hub). Everything stays on your home network.
