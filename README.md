@@ -11,6 +11,8 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 - **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
   ones you never use.
 - **Screensaver:** the same photos with a clock when the TV is idle.
+- **Languages:** English and Croatian (*Settings → About → Language*), or automatically the TV's
+  language.
 - **Updates itself:** it checks this page once a day. *Settings → About → Install update* installs a
   new version, and your settings are kept.
 - **Privacy:** no ads, no recommendations, no analytics. It only goes online for the photos, the
@@ -188,6 +190,10 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.21.0 · 2026-10-31
+
+Croatian translation, and a Language setting under About (Automatic, English, Hrvatski). / Hrvatski prijevod i postavka Jezik pod O aplikaciji.
 
 ### 0.20.0 · 2026-10-31
 
