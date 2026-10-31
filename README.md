@@ -202,6 +202,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.33.0 · 2026-10-31
+
+The Met: artworks are now cropped to fill the screen and stored at screen size, so they take far less space and memory, and the launcher runs smoother. Your current set is converted once, without downloading it again. Settings show how much space the day's set takes.
+
+The Met: umjetnine se sada obrezuju da ispune zaslon i spremaju u veličini zaslona, pa zauzimaju puno manje prostora i memorije, a launcher radi glatkije. Trenutni izbor se pretvara jednom, bez ponovnog preuzimanja. Postavke prikazuju koliko prostora zauzima dnevni izbor.
+
 ### 0.32.0 · 2026-10-31
 
 IKEA scenes are now pills like the settings, and the scene that ran last is marked. Up closes the settings, which no longer dim the screen. The selected app has a white border, and a single row of apps moves a whole screen at a time. The Met caption in the screensaver is lighter and smaller. Release notes now appear in the launcher's language.
