@@ -4,8 +4,6 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 
 - **Background:** a photo that changes on its own. Choose:
   - Bing's photo of the day (all regions);
-  - NASA images: galaxies and nebulae, Earth from space, planets and moons, and Earth Observatory's
-    image of the day;
   - a folder on the TV or a USB drive;
   - an Apple shared album.
 
@@ -197,6 +195,10 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.26.0 · 2026-10-31
+
+NASA images removed; a NASA background switches to Bing. / Uklonjene NASA fotografije; NASA pozadina prelazi na Bing.
 
 ### 0.25.0 · 2026-10-31
 
