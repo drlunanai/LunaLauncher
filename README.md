@@ -191,6 +191,10 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.22.0 · 2026-10-31
+
+The weather shows the country as its code (Zagreb, HR). / Vrijeme prikazuje državu kao kod (Zagreb, HR).
+
 ### 0.21.0 · 2026-10-31
 
 Croatian translation, and a Language setting under About (Automatic, English, Hrvatski). / Hrvatski prijevod i postavka Jezik pod O aplikaciji.
