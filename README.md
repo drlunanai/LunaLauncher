@@ -4,6 +4,8 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 
 - **Background:** a photo that changes on its own. Choose:
   - Bing's photo of the day (all regions);
+  - The Met: a new set of 30+ public-domain paintings and prints every day from The Metropolitan
+    Museum of Art (Open Access, CC0);
   - a folder on the TV or a USB drive;
   - an Apple shared album.
 
@@ -195,6 +197,10 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.27.0 · 2026-10-31
+
+New background source: The Met, a fresh set of 30+ public-domain artworks every day. / Nova pozadina: The Met, svaki dan novi izbor od 30+ umjetnina u javnom vlasništvu.
 
 ### 0.26.0 · 2026-10-31
 
