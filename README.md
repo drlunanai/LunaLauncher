@@ -13,7 +13,8 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 - **Clock:** standard, large minimal, or analogue (the hour in a ring that fills with the minutes).
 - **Top bar:** the clock, then one glass capsule with:
   - the weather; OK on it unrolls a 5-day forecast;
-  - Wi-Fi, VPN, screensaver and Play Store buttons;
+  - a red Wi-Fi-off icon, only while there's no internet;
+  - light scenes and news (coming soon), screensaver and Play Store buttons;
   - the settings gear.
 - **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
   ones you never use.
@@ -197,6 +198,12 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.29.0 · 2026-10-31
+
+Top bar: the Wi-Fi and VPN buttons are gone. A red Wi-Fi icon appears only when there's no internet (OK opens Wi-Fi settings). New Light scenes and News buttons for features coming soon.
+
+Gornja traka: gumbi za Wi-Fi i VPN su uklonjeni. Crvena ikona Wi-Fi pojavljuje se samo kad nema interneta (OK otvara postavke Wi-Fi mreže). Novi gumbi Scene svjetla i Vijesti za značajke koje uskoro stižu.
 
 ### 0.28.0 · 2026-10-31
 
