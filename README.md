@@ -10,7 +10,7 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
   - an Apple shared album.
 
   Dimming is adjustable, and an optional slow pan and zoom makes it a "living photo".
-- **Clock:** standard, large minimal, analogue or stacked.
+- **Clock:** standard, large minimal, or analogue (the hour in a ring that fills with the minutes).
 - **Top bar:** the clock, then one glass capsule with:
   - the weather; OK on it unrolls a 5-day forecast;
   - Wi-Fi, VPN, screensaver and Play Store buttons;
@@ -197,6 +197,10 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.25.0 · 2026-10-31
+
+New Analogue clock (the hour in a ring that fills with the minutes), left-aligned Large minimal, Stacked removed. / Novi analogni sat (sat u krugu koji se puni minutama), poravnati Veliki minimalni, uklonjen Složeni.
 
 ### 0.24.0 · 2026-10-31
 
