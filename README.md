@@ -163,7 +163,8 @@ home screen next to Google's. Don't disable anything else, such as the TV inputs
 Luna Launcher checks for a new version once a day. When one is out, a small orange dot appears on the
 gear:
 1. Open **Settings → About** and select **Install update**.
-2. Confirm if Android asks. The launcher restarts on its own, with your settings.
+2. Confirm if Android asks. The launcher shows *Updating Luna Launcher*, closes for a moment while
+   Android replaces it, and opens again by itself, with your settings.
 
 If About says *Installing updates isn't allowed yet*, run the `REQUEST_INSTALL_PACKAGES` command from
 step 3 again.
@@ -201,6 +202,12 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.37.0 · 2026-11-01
+
+Updates are smoother: while an update installs, the launcher shows "Updating Luna Launcher", and afterwards it opens again by itself. This works from the next update on.
+
+Ažuriranja su glatka: dok se ažuriranje instalira, launcher prikazuje „Ažuriranje Luna Launchera“, a nakon toga se sam ponovno otvara. To vrijedi od sljedećeg ažuriranja.
 
 ### 0.36.0 · 2026-11-01
 
