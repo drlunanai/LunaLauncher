@@ -14,8 +14,8 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 - **Top bar:** the clock, then one glass capsule with:
   - the weather; OK on it unrolls a 5-day forecast;
   - a red Wi-Fi-off icon, only while there's no internet;
-  - light scenes: your IKEA Home scenes as tiles plus the room temperature, straight from a DIRIGERA
-    hub on your network (*Settings → Advanced → IKEA Home*);
+  - light scenes: your IKEA Home or Philips Hue scenes as tiles plus the room temperature, straight
+    from a DIRIGERA hub or a Hue bridge on your network (*Settings → Advanced*; one at a time);
   - screensaver and Play Store buttons;
   - the settings gear.
 - **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
@@ -26,8 +26,8 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 - **Updates itself:** it checks this page once a day. *Settings → About → Install update* installs a
   new version, and your settings are kept.
 - **Privacy:** no ads, no recommendations, no analytics. It only goes online for the photos, the
-  weather (open-meteo.com, no account) and its own updates (this GitHub page). An IKEA hub is reached
-  only on your own network.
+  weather (open-meteo.com, no account) and its own updates (this GitHub page). An IKEA hub or a Hue
+  bridge is reached only on your own network.
 
 ## Download
 
@@ -210,6 +210,12 @@ adb uninstall com.drlunanai.luna
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 1.1.0 · 2026-11-01
+
+Philips Hue: your Hue scenes and the temperature from a Hue motion sensor in the top bar, paired with the button on the bridge (Settings → Advanced → Philips Hue). One smart home at a time: turning Hue on turns IKEA Home off; an IKEA hub you already paired stays as it is.
+
+Philips Hue: vaše Hue scene i temperatura s Hue senzora pokreta u gornjoj traci, uparivanje gumbom na mostu (Postavke → Napredno → Philips Hue). Jedan pametni dom odjednom: uključivanje Huea isključuje IKEA Home; već upareno IKEA čvorište ostaje kakvo jest.
 
 ### 1.0.0 · 2026-11-01
 
