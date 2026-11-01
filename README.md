@@ -205,6 +205,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.40.0 · 2026-11-01
+
+NewsReader: the article list now slides aside smoothly when you open an article. Article text is a bit smaller so more fits on screen, and pictures are fitted to the screen height, always shown whole.
+
+NewsReader: popis članaka sada se glatko pomiče u stranu kad otvorite članak. Tekst članka je malo manji pa više stane na zaslon, a slike su prilagođene visini zaslona i uvijek prikazane cijele.
+
 ### 0.39.0 · 2026-11-01
 
 NewsReader: Home now closes the reader. The section buttons are gone. While you read an article the list steps aside so the article fills the panel; Left or Back brings the list back.
