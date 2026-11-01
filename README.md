@@ -202,6 +202,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.35.0 · 2026-11-01
+
+Single row of apps: moving past the last app on screen slides in the whole next screen again. The last screen starts with its first app, like every other screen.
+
+Jedan red aplikacija: prelazak preko zadnje aplikacije na zaslonu ponovno uvodi cijeli sljedeći zaslon. Zadnji zaslon počinje svojom prvom aplikacijom, kao i svaki drugi.
+
 ### 0.34.0 · 2026-10-31
 
 The selected app now has a thinner white border with a soft glow. Apps slide smoothly to the next screen or row instead of jumping.
