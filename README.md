@@ -16,7 +16,9 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
   - a red Wi-Fi-off icon, only while there's no internet;
   - light scenes: your IKEA Home scenes as tiles plus the room temperature, straight from a DIRIGERA
     hub on your network (*Settings → Advanced → IKEA Home*);
-  - news (coming soon), screensaver and Play Store buttons;
+  - news: ad-free articles from your own NewsReader server, linked with a QR code
+    (*Settings → Advanced → NewsReader*);
+  - screensaver and Play Store buttons;
   - the settings gear.
 - **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
   ones you never use.
@@ -202,6 +204,12 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.38.0 · 2026-11-01
+
+NewsReader: the News button now shows the newest articles from your NewsReader server, without ads, and opens a full reader with your sources, sections and read marks (the same as on your phone and Mac). Link the TV with a QR code in Settings → Advanced → NewsReader.
+
+NewsReader: gumb Vijesti sada prikazuje najnovije članke s vašeg NewsReader poslužitelja, bez oglasa, i otvara čitač s vašim izvorima, rubrikama i pročitanim člancima (isto kao na mobitelu i Macu). TV povežite QR kodom u Postavke → Napredno → NewsReader.
 
 ### 0.37.1 · 2026-11-01
 
