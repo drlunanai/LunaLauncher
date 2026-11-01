@@ -205,6 +205,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.39.0 · 2026-11-01
+
+NewsReader: Home now closes the reader. The section buttons are gone. While you read an article the list steps aside so the article fills the panel; Left or Back brings the list back.
+
+NewsReader: tipka Home sada zatvara čitač. Gumbi rubrika su uklonjeni. Dok čitate članak, popis se sklanja pa članak ispunjava cijeli panel; tipka lijevo ili Natrag vraća popis.
+
 ### 0.38.0 · 2026-11-01
 
 NewsReader: the News button now shows the newest articles from your NewsReader server, without ads, and opens a full reader with your sources, sections and read marks (the same as on your phone and Mac). Link the TV with a QR code in Settings → Advanced → NewsReader.
