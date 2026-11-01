@@ -202,6 +202,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.36.0 · 2026-11-01
+
+Apps change to the next screen or row much faster, at constant speed.
+
+Aplikacije sada puno brže prelaze na sljedeći zaslon ili red, ujednačenom brzinom.
+
 ### 0.35.0 · 2026-11-01
 
 Single row of apps: moving past the last app on screen slides in the whole next screen again. The last screen starts with its first app, like every other screen.
