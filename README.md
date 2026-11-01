@@ -203,6 +203,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 0.37.1 · 2026-11-01
+
+A small update to try the new update flow: you'll see "Updating Luna Launcher", and the launcher opens again by itself.
+
+Malo ažuriranje za isprobavanje novog načina ažuriranja: vidjet ćete „Ažuriranje Luna Launchera“, a launcher će se sam ponovno otvoriti.
+
 ### 0.37.0 · 2026-11-01
 
 Updates are smoother: while an update installs, the launcher shows "Updating Luna Launcher", and afterwards it opens again by itself. This works from the next update on.
