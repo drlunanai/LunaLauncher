@@ -16,8 +16,6 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
   - a red Wi-Fi-off icon, only while there's no internet;
   - light scenes: your IKEA Home scenes as tiles plus the room temperature, straight from a DIRIGERA
     hub on your network (*Settings → Advanced → IKEA Home*);
-  - news: ad-free articles from your own NewsReader server, linked with a QR code
-    (*Settings → Advanced → NewsReader*);
   - screensaver and Play Store buttons;
   - the settings gear.
 - **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
@@ -37,6 +35,14 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 `Luna-Launcher-<version>.apk` to your computer.
 
 You only need the APK for the first installation. After that, Luna Launcher updates itself.
+
+**Had Luna Launcher before 0.41.0?** From 0.41.0 on, Luna Launcher is a new app
+(`com.drlunanai.luna`), and the old one (`com.drlunanai.mitvlauncher`) no longer gets updates from
+this page. Install the new one as below, then remove the old one:
+
+```bash
+adb uninstall com.drlunanai.mitvlauncher
+```
 
 ## What you need
 
@@ -94,17 +100,17 @@ It should list your TV as `device`. If it says `unauthorized`, accept the prompt
 ## 3. Install Luna Launcher
 
 ```bash
-adb install Luna-Launcher-0.20.0.apk
+adb install Luna-Launcher-0.41.0.apk
 ```
 
 Use the name of the file you downloaded. Then give it the permissions it needs. A normal app can't
 grant these itself on a TV, so they're granted over adb:
 
 ```bash
-adb shell appops set com.drlunanai.mitvlauncher GET_USAGE_STATS allow
-adb shell appops set com.drlunanai.mitvlauncher REQUEST_INSTALL_PACKAGES allow
-adb shell pm grant com.drlunanai.mitvlauncher android.permission.ACCESS_COARSE_LOCATION
-adb shell pm grant com.drlunanai.mitvlauncher android.permission.ACCESS_FINE_LOCATION
+adb shell appops set com.drlunanai.luna GET_USAGE_STATS allow
+adb shell appops set com.drlunanai.luna REQUEST_INSTALL_PACKAGES allow
+adb shell pm grant com.drlunanai.luna android.permission.ACCESS_COARSE_LOCATION
+adb shell pm grant com.drlunanai.luna android.permission.ACCESS_FINE_LOCATION
 ```
 
 What each one is for:
@@ -124,7 +130,7 @@ adb shell settings get secure screensaver_components
 Write down what this prints, so you can go back to it later. Then:
 
 ```bash
-adb shell settings put secure screensaver_components com.drlunanai.mitvlauncher/.system.PhotoDreamService
+adb shell settings put secure screensaver_components com.drlunanai.luna/com.drlunanai.mitvlauncher.system.PhotoDreamService
 adb shell settings put secure screensaver_enabled 1
 ```
 
@@ -156,7 +162,7 @@ Press **Home** on the remote: Luna Launcher should open. To check from the compu
 adb shell cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME
 ```
 
-The last line should be `com.drlunanai.mitvlauncher/.MainActivity`. If it names another app, disable
+The last line should be `com.drlunanai.luna/com.drlunanai.mitvlauncher.MainActivity`. If it names another app, disable
 that one the same way (`adb shell pm disable-user --user 0 <package>`). Some TCL models have their own
 home screen next to Google's. Don't disable anything else, such as the TV inputs app (Live TV / HDMI).
 
@@ -196,7 +202,7 @@ adb shell settings delete secure screensaver_components
 Then remove Luna Launcher:
 
 ```bash
-adb uninstall com.drlunanai.mitvlauncher
+adb uninstall com.drlunanai.luna
 ```
 
 ## Launcher updates
@@ -204,6 +210,12 @@ adb uninstall com.drlunanai.mitvlauncher
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 0.41.0 · 2026-11-01
+
+Moves this TV to the Family edition, with all your settings. Afterwards, Settings → About shows how to keep receiving updates.
+
+Prebacuje ovaj TV na obiteljsko izdanje, uz sve vaše postavke. Nakon toga Postavke → O aplikaciji pokazuju kako i dalje primati ažuriranja.
 
 ### 0.40.0 · 2026-11-01
 
