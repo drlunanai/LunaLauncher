@@ -36,7 +36,7 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 
 You only need the APK for the first installation. After that, Luna Launcher updates itself.
 
-**Had Luna Launcher before 0.41.0?** From 0.41.0 on, Luna Launcher is a new app
+**Had Luna Launcher before 1.0.0?** From 1.0.0 on, Luna Launcher is a new app
 (`com.drlunanai.luna`), and the old one (`com.drlunanai.mitvlauncher`) no longer gets updates from
 this page. Install the new one as below, then remove the old one:
 
@@ -100,7 +100,7 @@ It should list your TV as `device`. If it says `unauthorized`, accept the prompt
 ## 3. Install Luna Launcher
 
 ```bash
-adb install Luna-Launcher-0.41.0.apk
+adb install Luna-Launcher-1.0.0.apk
 ```
 
 Use the name of the file you downloaded. Then give it the permissions it needs. A normal app can't
@@ -210,6 +210,12 @@ adb uninstall com.drlunanai.luna
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 1.0.0 · 2026-11-01
+
+Luna Launcher 1.0.0, the first release of the new app (com.drlunanai.luna): a calm, ad-free home screen with daily photos, weather, IKEA Home scenes and a photo screensaver. Had the old Luna Launcher? Install this one and remove the old one (see Download).
+
+Luna Launcher 1.0.0, prvo izdanje nove aplikacije (com.drlunanai.luna): miran početni zaslon bez reklama, s dnevnim fotografijama, vremenskom prognozom, IKEA Home scenama i fotografskim čuvarom zaslona. Imali ste stari Luna Launcher? Instalirajte ovaj i uklonite stari (vidi Download).
 
 ### 0.41.0 · 2026-11-01
 
