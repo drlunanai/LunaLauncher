@@ -211,6 +211,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 1.2.0 · 2026-11-02
+
+New look: the launcher now uses the Plus Jakarta Sans typeface, and the smart home button in the top bar has a new icon (a house with sparkles).
+
+Novi izgled: launcher sada koristi pismo Plus Jakarta Sans, a gumb pametnog doma u gornjoj traci ima novu ikonu (kuća s iskricama).
+
 ### 1.1.0 · 2026-11-01
 
 Philips Hue: your Hue scenes and the temperature from a Hue motion sensor in the top bar, paired with the button on the bridge (Settings → Advanced → Philips Hue). One smart home at a time: turning Hue on turns IKEA Home off; an IKEA hub you already paired stays as it is.
