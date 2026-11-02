@@ -21,6 +21,9 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
 - **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
   ones you never use.
 - **Screensaver:** the same photos with a clock when the TV is idle.
+- **Remote button:** choose a remote button you don't use to open the top-bar capsule over any app
+  (*Settings → Advanced → Remote button*). It uses a key-only accessibility service that you switch
+  on yourself; it never sees the screen.
 - **Languages:** English and Croatian (*Settings → About → Language*), or automatically the TV's
   language.
 - **Updates itself:** it checks this page once a day. *Settings → About → Install update* installs a
@@ -210,6 +213,12 @@ adb uninstall com.drlunanai.luna
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 1.3.0 · 2026-11-02
+
+Remote button: pick a remote button you don't use to open the top-bar capsule (weather, scenes, quick buttons) over any app. Settings → Advanced → Remote button; switch it on once in Android's Accessibility settings. It only sees which button is pressed, never the screen.
+
+Gumb daljinskog: odaberite gumb na daljinskom koji ne koristite da otvori kapsulu iz gornje trake (vrijeme, scene, brzi gumbi) iznad bilo koje aplikacije. Postavke → Napredno → Gumb daljinskog; jednom ga uključite u postavkama Pristupačnosti. Vidi samo koji je gumb pritisnut, nikad zaslon.
 
 ### 1.2.0 · 2026-11-02
 
