@@ -214,6 +214,12 @@ What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
 
+### 1.7.0 · 2026-11-03
+
+Set up this TV from the launcher, without a computer: a step-by-step popup (offered once) has you turn on USB debugging, then makes Luna the Home app, sets its screensaver, lets updates install without asking, and more. Settings → Advanced → TV access shows each item, fixes what's off and can go back to the previous launcher. With TV access, updates install by themselves behind a calm Updating screen. New focus look (brighter glass instead of a white bubble), app tiles that just grow when selected, and a Banners setting: colour or monochrome light/dark. New weather icons for every kind of weather; the weather refreshes every 5 minutes and Today shows the rest of the day. Calmer start: online requests go one after another, and photos aren't fetched again after every restart.
+
+Postavljanje TV-a iz pokretača, bez računala: skočni prozor korak po korak (nudi se jednom) vodi vas kroz uključivanje USB otklanjanja pogrešaka, a zatim postavlja Lunu kao početnu aplikaciju, njezin čuvar zaslona, ažuriranja bez pitanja i još ponešto. Postavke → Napredno → Pristup TV-u prikazuje svaku stavku, popravlja isključeno i može vratiti prethodni pokretač. S pristupom TV-u ažuriranja se instaliraju sama, uz miran zaslon Ažuriranje. Novi izgled odabira (svjetlije staklo umjesto bijelog mjehurića), aplikacije se pri odabiru samo povećaju, i postavka Banneri: u boji ili jednobojni svijetli/tamni. Nove ikone za svaku vrstu vremena; vrijeme se osvježava svakih 5 minuta, a Danas prikazuje ostatak dana. Mirnije pokretanje: zahtjevi na mrežu idu jedan za drugim, a fotografije se ne preuzimaju ponovno nakon svakog pokretanja.
+
 ### 1.3.0 · 2026-11-02
 
 Remote button: pick a remote button you don't use to open the top-bar capsule (weather, scenes, quick buttons) over any app. Settings → Advanced → Remote button; switch it on once in Android's Accessibility settings. It only sees which button is pressed, never the screen.
