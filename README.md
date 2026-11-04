@@ -26,186 +26,125 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
   on yourself; it never sees the screen.
 - **Languages:** English and Croatian (*Settings → About → Language*), or automatically the TV's
   language.
+- **Sets itself up:** no computer needed. A step-by-step popup makes it the home screen and the
+  screensaver, and repairs that if a TV update undoes it.
 - **Updates itself:** it checks this page once a day. *Settings → About → Install update* installs a
-  new version, and your settings are kept.
+  new version, without asking once the TV is set up, and your settings are kept.
 - **Privacy:** no ads, no recommendations, no analytics. It only goes online for the photos, the
   weather (open-meteo.com, no account) and its own updates (this GitHub page). An IKEA hub or a Hue
   bridge is reached only on your own network.
 
 ## Download
 
-**[Latest release](https://github.com/drlunanai/LunaLauncher/releases/latest)**: download
-`Luna-Launcher-<version>.apk` to your computer.
+**[Latest release](https://github.com/drlunanai/LunaLauncher/releases/latest)**: the file
+`Luna-Launcher-<version>.apk`.
 
-You only need the APK for the first installation. After that, Luna Launcher updates itself.
+You only need it for the first installation. After that, Luna Launcher updates itself.
 
 **Had Luna Launcher before 1.0.0?** From 1.0.0 on, Luna Launcher is a new app
 (`com.drlunanai.luna`), and the old one (`com.drlunanai.mitvlauncher`) no longer gets updates from
-this page. Install the new one as below, then remove the old one:
+this page. Install the new one as below, then remove the old one in **Settings → Apps** (or with
+`adb uninstall com.drlunanai.mitvlauncher`).
 
-```bash
-adb uninstall com.drlunanai.mitvlauncher
-```
+## Install (no computer needed, from 1.7.0)
 
-## What you need
+### 1. Get the APK onto the TV
 
-- A computer (Mac, Windows or Linux) on the **same network** as the TV.
-- **adb** (Android platform-tools):
-  - macOS: `brew install android-platform-tools`
-  - Windows: download [platform-tools](https://developer.android.com/tools/releases/platform-tools),
-    unzip it, and run the commands below from that folder (`adb.exe`).
-  - Debian/Ubuntu: `sudo apt install adb`
+Either way, Android first asks you to allow installing apps from that source: allow it for the app
+you use.
 
-Nothing here needs root. Everything can be undone (see [Undo](#undo)).
+- **A downloader app:** install one from Google Play on the TV (for example *Downloader*), open
+  `github.com/drlunanai/LunaLauncher/releases/latest` in it, and select `Luna-Launcher-<version>.apk`.
+- **A USB drive:** copy the APK onto it, plug it into the TV, and open it with a file manager app
+  (for example *File Commander* or *X-plore* from Google Play).
 
-## 1. Turn on debugging on the TV
+### 2. Open Luna Launcher and follow the setup
 
-### Xiaomi Mi Box S (2nd gen, Google TV)
+Open **Luna Launcher** from the TV's app list. It offers **Set up this TV**, step by step:
 
-1. **Settings → System → About**: scroll to **Android TV OS build** and press OK **7 times**, until it
-   says you're a developer.
-2. **Settings → System → Developer options**: turn on **USB debugging**.
-3. **Settings → Network & Internet** → your network: note the **IP address** (e.g. `192.168.1.50`).
+1. **Turn on USB debugging.** The popup shows the steps for your TV:
+   - **Google TV** (Mi Box S 2nd gen, TCL Google TV): **Settings → System → About**, press OK on
+     **Android TV OS build** 7 times until it says you're a developer, then **Settings → System →
+     Developer options → USB debugging**.
+   - **Android TV** (Mi Box S Android 9, TCL Android TV): the same under **Settings → Device
+     Preferences**, with **Build** instead.
+   - **TCL TVs:** also switch on **Network debugging** / **ADB over network** if your model lists it.
 
-On the older **Mi Box S (Android TV 9)** the same items are under **Settings → Device Preferences →
-About → Build** and **Settings → Device Preferences → Developer options**.
+   Come back with **Back** and select **Next**.
+2. **Allow Luna.** The TV asks **Allow USB debugging?**: tick **Always allow from this computer** and
+   choose **OK**. (It says "computer", but it's Luna asking, from the TV itself.)
+3. **The checklist** ticks itself off:
+   - Luna becomes the **home screen** (the stock one is turned off, never uninstalled);
+   - Luna's photos become the **screensaver**;
+   - **updates** install by themselves, without asking;
+   - **usage access**, so apps are sorted by how much you use them;
+   - **location**, only because Android shows the Wi-Fi network name only to apps with it (the
+     launcher doesn't locate the TV or send anything);
+   - the **remote button** service is switched on (it does nothing until you choose a button).
 
-### TCL TV (Google TV or Android TV)
+Press **Home**: Luna Launcher opens. *Not now* skips the setup; you can run it later from
+**Settings → Advanced → TV access → Set up this TV**. USB debugging can stay on; Luna needs it for
+updates without asking and to repair the setup.
 
-1. Open the developer menu:
-   - **Google TV models:** **Settings → System → About**: scroll to **Android TV OS build** and press OK
-     **7 times**.
-   - **Android TV models:** **Settings → Device Preferences → About**: scroll to **Build** and press OK
-     **7 times**.
-2. Turn on debugging in **Developer options** (under **System** on Google TV, **Device Preferences** on
-   Android TV). Switch on **USB debugging**, and also **Network debugging** / **ADB over network** if
-   your model lists it.
-3. Note the TV's **IP address**:
-   - **Google TV:** **Settings → Network & Internet** → your network.
-   - **Android TV:** **Settings → Network & Internet** → your network, or **Network → Network status**.
+Nothing here needs root, and everything can be undone (see [Undo](#undo)).
 
-## 2. Connect your computer
+## Settings → Advanced → TV access
 
-```bash
-adb connect 192.168.1.50:5555
-```
+- Each item of the checklist, **On** or **Off**.
+- **Fix now** turns on whatever is off. Luna also does this by itself at every start, for example
+  after a TV update brought the stock home screen back.
+- **Go back to the previous launcher**: see [Undo](#undo).
 
-Use your TV's IP address. The TV asks **Allow USB debugging?**: tick **Always allow from this
-computer** and choose **OK**. Then check:
+## Install with a computer instead
 
-```bash
-adb devices
-```
+If you'd rather use adb (Android platform-tools) on a computer on the same network:
 
-It should list your TV as `device`. If it says `unauthorized`, accept the prompt on the TV and run
-`adb connect` again.
+1. Turn on **USB debugging** as in step 2.1 above, and note the TV's **IP address** (**Settings →
+   Network & Internet** → your network).
+2. Connect and install:
 
-## 3. Install Luna Launcher
+   ```bash
+   adb connect 192.168.1.50:5555
+   ```
 
-```bash
-adb install Luna-Launcher-1.0.0.apk
-```
+   ```bash
+   adb install Luna-Launcher-1.7.0.apk
+   ```
 
-Use the name of the file you downloaded. Then give it the permissions it needs. A normal app can't
-grant these itself on a TV, so they're granted over adb:
-
-```bash
-adb shell appops set com.drlunanai.luna GET_USAGE_STATS allow
-adb shell appops set com.drlunanai.luna REQUEST_INSTALL_PACKAGES allow
-adb shell pm grant com.drlunanai.luna android.permission.ACCESS_COARSE_LOCATION
-adb shell pm grant com.drlunanai.luna android.permission.ACCESS_FINE_LOCATION
-```
-
-What each one is for:
-- **Usage access:** sorts apps by how much you use them.
-- **Install apps:** lets the launcher install its own updates.
-- **Location:** Android only shows the Wi-Fi network name to apps with location access. The launcher
-  doesn't locate the TV or send anything.
-
-## 4. Use the launcher's photos as the screensaver (optional)
-
-Google TV doesn't list third-party screensavers in its settings, so choose it over adb:
-
-```bash
-adb shell settings get secure screensaver_components
-```
-
-Write down what this prints, so you can go back to it later. Then:
-
-```bash
-adb shell settings put secure screensaver_components com.drlunanai.luna/com.drlunanai.mitvlauncher.system.PhotoDreamService
-adb shell settings put secure screensaver_enabled 1
-```
-
-## 5. Make it the home screen
-
-The stock home screen is **disabled**, never uninstalled, so it can always be turned back on.
-
-### Google TV (Mi Box S 2nd gen, TCL Google TV)
-
-```bash
-adb shell pm disable-user --user 0 com.google.android.apps.tv.launcherx
-adb shell pm disable-user --user 0 com.google.android.tungsten.setupwraith
-```
-
-On Google TV the setup wizard also acts as a home screen once the stock one is off, so it's disabled
-too.
-
-### Android TV (Mi Box S Android 9, TCL Android TV)
-
-```bash
-adb shell pm disable-user --user 0 com.google.android.tvlauncher
-```
-
-### Check
-
-Press **Home** on the remote: Luna Launcher should open. To check from the computer:
-
-```bash
-adb shell cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.HOME
-```
-
-The last line should be `com.drlunanai.luna/com.drlunanai.mitvlauncher.MainActivity`. If it names another app, disable
-that one the same way (`adb shell pm disable-user --user 0 <package>`). Some TCL models have their own
-home screen next to Google's. Don't disable anything else, such as the TV inputs app (Live TV / HDMI).
+   Use your TV's IP address and the file you downloaded. The TV asks **Allow USB debugging?** for
+   the computer: tick **Always allow** and choose **OK**.
+3. Open Luna Launcher on the TV and run **Set up this TV** as above (it asks to allow Luna too).
 
 ## Updates
 
 Luna Launcher checks for a new version once a day. When one is out, a small orange dot appears on the
-gear:
-1. Open **Settings → About** and select **Install update**.
-2. Confirm if Android asks. The launcher shows *Updating Luna Launcher*, closes for a moment while
-   Android replaces it, and opens again by itself, with your settings.
-
-If About says *Installing updates isn't allowed yet*, run the `REQUEST_INSTALL_PACKAGES` command from
-step 3 again.
+gear. Open **Settings → About** and select **Install update**:
+- **With TV access set up**, it installs by itself: the screen shows *Updating Luna Launcher* until
+  the launcher is back, with your settings. A tiny helper app, **Luna Updater**, keeps that screen
+  up while Android replaces the launcher; Luna installs it by itself.
+- **Without it**, Android asks you to confirm, and About says so. If About says *Installing updates
+  isn't allowed yet*, run **Set up this TV**.
 
 ## Undo
 
-Turn the stock home screen back on. On Google TV:
+**Settings → Advanced → TV access → Go back to the previous launcher** turns the stock home screen
+back on, makes it the home screen again, restores the screensaver you had before, and switches off
+Luna's remote-button service. Luna stays installed; remove it in **Settings → Apps → Luna Launcher →
+Uninstall**, and Luna Updater the same way.
+
+You can also turn USB debugging off again in **Developer options** once Luna is removed.
+
+**Set it up with adb before 1.7.0?** *Go back* needs TV access, so either run **Set up this TV**
+first, or undo it from the computer: turn the stock home screen back on (Google TV:
+`com.google.android.apps.tv.launcherx` and `com.google.android.tungsten.setupwraith`; Android TV:
+`com.google.android.tvlauncher`), and reset the screensaver:
 
 ```bash
 adb shell pm enable com.google.android.apps.tv.launcherx
-adb shell pm enable com.google.android.tungsten.setupwraith
 ```
-
-On Android TV:
-
-```bash
-adb shell pm enable com.google.android.tvlauncher
-```
-
-Put the screensaver back. Use the value you wrote down in step 4, or delete the setting to get the
-default:
 
 ```bash
 adb shell settings delete secure screensaver_components
-```
-
-Then remove Luna Launcher:
-
-```bash
-adb uninstall com.drlunanai.luna
 ```
 
 ## Launcher updates
