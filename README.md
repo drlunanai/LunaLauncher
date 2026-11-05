@@ -18,8 +18,12 @@ A calm, ad-free home screen for **Android TV** and **Google TV**.
     from a DIRIGERA hub or a Hue bridge on your network (*Settings → Advanced*; one at a time);
   - screensaver and Play Store buttons;
   - the settings gear.
-- **Apps:** big banners, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
+- **Apps:** app icons as rounded squares, **most used first** (or A–Z, or your own order), in one or two rows. Hide the
   ones you never use.
+- **Luna apps:** apps made to go with Luna (the first is **Qreekr**, a player for your Stremio
+  add-ons), in *Settings → Apps → Luna apps* and on a tile at the end of the app row until they're
+  installed. Each download is checked (its SHA-256 and who signed it) before it's installed, and
+  Luna offers their updates there, with the orange dot.
 - **Screensaver:** the same photos with a clock when the TV is idle.
 - **Remote button:** choose a remote button you don't use to open the top-bar capsule over any app
   (*Settings → Advanced → Remote button*). It uses a key-only accessibility service that you switch
@@ -152,6 +156,12 @@ adb shell settings delete secure screensaver_components
 What changed in each version, newest first.
 
 <!-- RELEASES: everything below is generated from the releases on every publish. -->
+
+### 1.9.0 · 2026-11-05
+
+Luna apps: Settings → Apps → Luna apps installs and updates apps made for Luna, starting with Qreekr. Apps are now their icons, as rounded squares, 8 per row (7–9 in Settings → Apps); the Banners setting is now called Icons.
+
+Luna aplikacije: Postavke → Aplikacije → Luna aplikacije instalira i ažurira aplikacije napravljene za Lunu, za početak Qreekr. Aplikacije su sada njihove ikone, kao zaobljeni kvadrati, 8 u redu (7–9 u Postavke → Aplikacije); postavka Banneri sada se zove Ikone.
 
 ### 1.7.0 · 2026-11-03
 
