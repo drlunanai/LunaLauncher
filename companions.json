@@ -1,17 +1,17 @@
 {
   "apps": [
     {
-      "package": "com.drlunanai.streamster",
-      "name": "Streamster",
+      "package": "com.drlunanai.qreekr",
+      "name": "Qreekr",
       "description": "Movies and series from your Stremio add-ons, in the Luna look.",
       "description_hr": "Filmovi i serije iz tvojih Stremio dodataka, u Luninom izgledu.",
-      "banner": "https://raw.githubusercontent.com/drlunanai/LunaLauncher/main/companions/streamster.png",
+      "banner": "https://raw.githubusercontent.com/drlunanai/LunaLauncher/main/companions/qreekr.png",
       "versionCode": 3,
       "versionName": "1.0.0",
-      "apk": "https://github.com/drlunanai/LunaLauncher/releases/download/streamster-v1.0.0/Streamster-1.0.0.apk",
-      "sha256": "6cf82f7747bc1457578e5edb90149e74d80d1461ab12b37f8433fd902653593a",
+      "apk": "https://github.com/drlunanai/LunaLauncher/releases/download/qreekr-v1.0.0/Qreekr-1.0.0.apk",
+      "sha256": "9154217917aa31b3770693426880d17087d79b8acd7a0ea939acf3461c4ab59a",
       "signer": "41aaaa58460a80a343dccc243b67bc7ead2b3363e0e2fcfbffc44e4eda32e522",
-      "size": 4044910
+      "size": 3964558
     }
   ]
 }
