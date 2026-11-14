@@ -6,12 +6,12 @@
       "description": "Movies and series from your Stremio add-ons, in the Luna look.",
       "description_hr": "Filmovi i serije iz tvojih Stremio dodataka, u Luninom izgledu.",
       "banner": "https://raw.githubusercontent.com/drlunanai/LunaLauncher/main/companions/qreekr.png",
-      "versionCode": 12,
-      "versionName": "1.4.0",
-      "apk": "https://github.com/drlunanai/LunaLauncher/releases/download/qreekr-v1.4.0/Qreekr-1.4.0.apk",
-      "sha256": "6ee2ee1d34faf5698cca63f305921ab9670409a7b49bea88bd1a30f3042c9a53",
+      "versionCode": 13,
+      "versionName": "1.4.1",
+      "apk": "https://github.com/drlunanai/LunaLauncher/releases/download/qreekr-v1.4.1/Qreekr-1.4.1.apk",
+      "sha256": "4c3f42e1a162e7c55f64b662e9539bc86e61737e71d62f3eff252164d92d9bea",
       "signer": "41aaaa58460a80a343dccc243b67bc7ead2b3363e0e2fcfbffc44e4eda32e522",
-      "size": 4092686
+      "size": 4092682
     }
   ]
 }
